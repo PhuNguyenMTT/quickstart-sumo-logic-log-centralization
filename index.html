@@ -833,16 +833,18 @@ p.footer-text a{color:#d7d8d8}
 <ul class="sectlevel2">
 <li><a href="#_specialized_knowledge">Specialized knowledge</a></li>
 <li><a href="#_scenarios_supported_by_this_quick_start">Scenarios supported by this Quick Start</a></li>
+<li><a href="#_aws_services_to_sumo_logic_apps_mapping">AWS services to Sumo Logic apps mapping</a></li>
+</ul>
+</li>
+<li><a href="#_scenarios_supported_by_this_quick_start_2">Scenarios supported by this Quick Start</a>
+<ul class="sectlevel2">
 <li><a href="#_aws_account">AWS account</a></li>
 <li><a href="#_technical_requirements">Technical requirements</a></li>
 </ul>
 </li>
-<li><a href="#_deployment_steps">Deployment steps</a>
-<ul class="sectlevel2">
+<li><a href="#_deployment_steps">Deployment steps</a></li>
 <li><a href="#_prepare_your_sumo_logic_account_2">Prepare your Sumo Logic account</a></li>
 <li><a href="#_launch_the_quick_start">Launch the Quick Start</a></li>
-</ul>
-</li>
 <li><a href="#_test_the_deployment">Test the deployment</a>
 <ul class="sectlevel2">
 <li><a href="#_aws_account_2">AWS Account</a></li>
@@ -1105,57 +1107,6 @@ deploy, and operate your infrastructure and applications on the AWS Cloud.</p>
 <p>Before you deploy this Quick Start, we recommend that you become familiar with Sumo
 Logic in addition to the following AWS services. If you are new to AWS, see <a href="https://aws.amazon.com/getting-started/" target="_blank" rel="noopener">Getting Started with AWS</a>. If you are new to Sumo Logic, see <a href="https://help.sumologic.com/01Start-Here/04Getting-Started" target="_blank" rel="noopener">Getting Started with Sumo Logic</a>.</p>
 </div>
-<div class="paragraph">
-<p>The following table shows how various AWS security services map to the corresponding
-apps in Sumo Logic. We recommend you get familiar with them.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">AWS security service or feature</th>
-<th class="tableblock halign-left valign-top">Sumo Logic apps for the following AWS services or features</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/cloudtrail" target="_blank" rel="noopener">AWS CloudTrail</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_CloudTrail" target="_blank" rel="noopener">AWS CloudTrail</a></p>
-<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/PCI_Compliance_for_AWS_CloudTrail_App" target="_blank" rel="noopener">PCI DSS compliance for AWS CloudTrail</a></p>
-<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/CIS_AWS_Foundations_Benchmark_App" target="_blank" rel="noopener">CIS AWS Foundations Benchmark</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/guardduty" target="_blank" rel="noopener">Amazon GuardDuty</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_GuardDuty" target="_blank" rel="noopener">Amazon GuardDuty</a></p>
-<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Global_Intelligence_for_Amazon_GuardDuty" target="_blank" rel="noopener">Global Intelligence for Amazon GuardDuty</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html" target="_blank" rel="noopener">Amazon VPC Flow Logs</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_VPC_Flow_Logs" target="_blank" rel="noopener">Amazon VPC Flow Logs</a></p>
-<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/PCI_Compliance_for_Amazon_VPC_Flow_Logs" target="_blank" rel="noopener">PCI DSS compliance for Amazon VPC Flow Logs</a></p>
-<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Threat_Intel_for_AWS" target="_blank" rel="noopener">Threat Intel for AWS</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html" target="_blank" rel="noopener">Amazon S3 server access logging</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_S3_Audit" target="_blank" rel="noopener">Amazon S3 Audit</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/security-hub/?aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&amp;aws-security-hub-blogs.sort-order=desc" target="_blank" rel="noopener">AWS Security Hub</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_Security_Hub" target="_blank" rel="noopener">AWS Security Hub</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/waf" target="_blank" rel="noopener">AWS WAF</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_WAF" target="_blank" rel="noopener">AWS WAF</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/config" target="_blank" rel="noopener">AWS Config</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_Config" target="_blank" rel="noopener">AWS Config</a></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect2">
 <h3 id="_scenarios_supported_by_this_quick_start">Scenarios supported by this Quick Start</h3>
@@ -1185,6 +1136,92 @@ non-configured AWS security services and their corresponding Sumo Logic apps.</p
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_aws_services_to_sumo_logic_apps_mapping">AWS services to Sumo Logic apps mapping</h3>
+<div class="paragraph">
+<p>The following table shows how various AWS security services map to the corresponding
+apps in Sumo Logic. We recommend you get familiar with them.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Features Table</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">AWS security service or feature</th>
+<th class="tableblock halign-left valign-top">Sumo Logic apps for the following AWS services or features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/cloudtrail" target="_blank" rel="noopener">AWS CloudTrail</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_CloudTrail" target="_blank" rel="noopener">AWS CloudTrail</a>
+<a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/PCI_Compliance_for_AWS_CloudTrail_App" target="_blank" rel="noopener">PCI DSS compliance for AWS CloudTrail</a>
+<a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/CIS_AWS_Foundations_Benchmark_App" target="_blank" rel="noopener">CIS AWS Foundations Benchmark</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/guardduty" target="_blank" rel="noopener">Amazon GuardDuty</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_GuardDuty" target="_blank" rel="noopener">Amazon GuardDuty</a></p>
+<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Global_Intelligence_for_Amazon_GuardDuty" target="_blank" rel="noopener">Global Intelligence for Amazon GuardDuty</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html" target="_blank" rel="noopener">Amazon VPC Flow Logs</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_VPC_Flow_Logs" target="_blank" rel="noopener">Amazon VPC Flow Logs</a></p>
+<p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/PCI_Compliance_for_Amazon_VPC_Flow_Logs" target="_blank" rel="noopener">PCI DSS compliance for Amazon VPC Flow Logs</a>
+<a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Threat_Intel_for_AWS" target="_blank" rel="noopener">Threat Intel for AWS</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html" target="_blank" rel="noopener">Amazon S3 server access logging</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/Amazon_S3_Audit" target="_blank" rel="noopener">Amazon S3 Audit</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/security-hub/?aws-security-hub-blogs.sort-by=item.additionalFields.createdDate&amp;aws-security-hub-blogs.sort-order=desc" target="_blank" rel="noopener">AWS Security Hub</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_Security_Hub" target="_blank" rel="noopener">AWS Security Hub</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/waf" target="_blank" rel="noopener">AWS WAF</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_WAF" target="_blank" rel="noopener">AWS WAF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://aws.amazon.com/config" target="_blank" rel="noopener">AWS Config</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://help.sumologic.com/07Sumo-Logic-Apps/01Amazon_and_AWS/AWS_Config" target="_blank" rel="noopener">AWS Config</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scenarios_supported_by_this_quick_start_2">Scenarios supported by this Quick Start</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This Quick Start supports the following scenarios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Scenario 1: You do not use AWS security services or Sumo Logic.</strong> You did not
+configure AWS to use one or more security services listed under Specialized knowledge,
+but you want to collect and analyze data using Sumo Logic apps. For this scenario, use
+this Quick Start to set up AWS security services and configure Sumo Logic.</p>
+</li>
+<li>
+<p><strong>Scenario 2: You use AWS security services but not Sumo Logic.</strong> You use the AWS security services listed under Specialized knowledge but have not configured Sumo
+Logic to collect data from AWS or installed the corresponding Sumo Logic apps. For this
+scenario, configure the auxiliary AWS services and resources to send data to Sumo
+Logic. This scenario also installs the corresponding Sumo Logic apps.</p>
+</li>
+<li>
+<p><strong>Scenario 3: You use AWS security services and Sumo Logic.</strong> You use the AWS
+security services listed under Specialized knowledge and you collect and analyze data
+from one or more of them in Sumo Logic. For this scenario, configure the auxiliary AWS
+services and resources to send data to Sumo Logic. This scenario is intended only for
+non-configured AWS security services and their corresponding Sumo Logic apps.</p>
+</li>
+</ul>
 </div>
 <div class="sect2">
 <h3 id="_aws_account">AWS account</h3>
@@ -1289,8 +1326,11 @@ infrastructure resources required to provision applications to your Sumo Logic a
 necessary resources to your AWS account. During the deployment, you can choose which
 applications to install.</p>
 </div>
-<div class="sect2">
-<h3 id="_prepare_your_sumo_logic_account_2">Prepare your Sumo Logic account</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prepare_your_sumo_logic_account_2">Prepare your Sumo Logic account</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1319,8 +1359,10 @@ the relevant Sumo Logic source category for your data.
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_launch_the_quick_start">Launch the Quick Start</h3>
+</div>
+<div class="sect1">
+<h2 id="_launch_the_quick_start">Launch the Quick Start</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Deploy Sumo Logic Security Integrations. Each deployment takes about 10 minutes to complete.</p>
 </div>
@@ -1365,7 +1407,6 @@ the relevant Sumo Logic source category for your data.
 . Choose <strong>Create stack</strong> to deploy the stack.
 . Monitor the status of the stack. When the status is <strong>CREATE_COMPLETE</strong>, the Sumo Logic deployment is ready.
 . To view the created resources, see the values displayed in the <strong>Outputs</strong> tab for the stack.</p>
-</div>
 </div>
 </div>
 </div>
@@ -1597,7 +1638,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 <div class="sect2">
 <h3 id="_parameters_for_deploying_sumo_logic">Parameters for deploying Sumo Logic</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. 1.1 Sumo Logic access configuration (required)</caption>
+<caption class="title">Table 2. 1.1 Sumo Logic access configuration (required)</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1644,7 +1685,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. 2.1 CloudTrail app configuration</caption>
+<caption class="title">Table 3. 2.1 CloudTrail app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1679,7 +1720,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. 2.2 S3 configuration</caption>
+<caption class="title">Table 4. 2.2 S3 configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1708,7 +1749,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. 2.3 CloudTrail source configuration</caption>
+<caption class="title">Table 5. 2.3 CloudTrail source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1743,7 +1784,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. 3.1 GuardDuty app configuration</caption>
+<caption class="title">Table 6. 3.1 GuardDuty app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1766,7 +1807,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. 3.2 GuardDuty log-source configuration</caption>
+<caption class="title">Table 7. 3.2 GuardDuty log-source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1795,7 +1836,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. 4.1 VPC flow logs app configuration</caption>
+<caption class="title">Table 8. 4.1 VPC flow logs app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1818,7 +1859,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. 4.2 S3 configuration</caption>
+<caption class="title">Table 9. 4.2 S3 configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1847,7 +1888,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. 4.3 VPC S3 source configuration</caption>
+<caption class="title">Table 10. 4.3 VPC S3 source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1882,7 +1923,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. 5.1 Sumo Logic Threat Intel for AWS Config</caption>
+<caption class="title">Table 11. 5.1 Sumo Logic Threat Intel for AWS Config</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1911,7 +1952,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. 6.1 Sumo Logic S3 audit app configuration</caption>
+<caption class="title">Table 12. 6.1 Sumo Logic S3 audit app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1934,7 +1975,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. 6.2 S3 configuration</caption>
+<caption class="title">Table 13. 6.2 S3 configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1963,7 +2004,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. 6.3 VPC S3 source configuration</caption>
+<caption class="title">Table 14. 6.3 VPC S3 source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -1998,7 +2039,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. 7.1 AWS Security Hub app configuration</caption>
+<caption class="title">Table 15. 7.1 AWS Security Hub app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2027,7 +2068,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. 7.2 S3 configuration</caption>
+<caption class="title">Table 16. 7.2 S3 configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2056,7 +2097,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 16. 7.3 Sumo Logic Security Hub S3 source configuration</caption>
+<caption class="title">Table 17. 7.3 Sumo Logic Security Hub S3 source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2091,7 +2132,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 17. 8.1 Sumo Logic AWS WAF app configuration</caption>
+<caption class="title">Table 18. 8.1 Sumo Logic AWS WAF app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2120,7 +2161,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 18. 8.2 S3 configuration</caption>
+<caption class="title">Table 19. 8.2 S3 configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2149,7 +2190,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 19. 8.3 Sumo Logic AWS WAF S3 source configuration</caption>
+<caption class="title">Table 20. 8.3 Sumo Logic AWS WAF S3 source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2184,7 +2225,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 20. 9.1 Sumo Logic AWS Config app configuration</caption>
+<caption class="title">Table 21. 9.1 Sumo Logic AWS Config app configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2207,7 +2248,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. 9.2 AWS Config Configuration</caption>
+<caption class="title">Table 22. 9.2 AWS Config Configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2242,7 +2283,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. 9.3 Sumo Logic AWS Config HTTP logs source configuration</caption>
+<caption class="title">Table 23. 9.3 Sumo Logic AWS Config HTTP logs source configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2271,7 +2312,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. 10.1 Auto-enable logging configuration</caption>
+<caption class="title">Table 24. 10.1 Auto-enable logging configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2300,7 +2341,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. 10.2 S3 audit logging of auto-enable configuration</caption>
+<caption class="title">Table 25. 10.2 S3 audit logging of auto-enable configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2329,7 +2370,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. 10.3 VPC flow logs auto-enable configuration</caption>
+<caption class="title">Table 26. 10.3 VPC flow logs auto-enable configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2363,7 +2404,7 @@ Unless you are customizing the Quick Start templates for your own deployment pro
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 26. AWS Quick Start configuration</caption>
+<caption class="title">Table 27. AWS Quick Start configuration</caption>
 <colgroup>
 <col style="width: 16%;">
 <col style="width: 11%;">
@@ -2448,7 +2489,8 @@ and to share your customizations with others.</p>
 </html>
 <!--
 repo commit:
-f03f27e7a919b10cc07fe73e199d1bba217bd81c
+776b5e93001e8e094b985892139aa9d7fa0aa455
+commit
 
 submodule config:
  a9d6c5903745c1091793d3cd1f960948919c2c9f docs/boilerplate (heads/main)
